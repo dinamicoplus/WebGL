@@ -2,7 +2,7 @@ main();
 
 function main() {
     const canvas = document.querySelector("#glcanvas");
-    const gl = document.getContext("webgl");
+    const gl = canvas.getContext("webgl");
 
     if (gl === null) {
         alert("No funciona WebGL en este navegador");
